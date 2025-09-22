@@ -1,0 +1,130 @@
+    * {
+      margin: 0;
+      padding: 0; 
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fff;
+      color: #111;
+      font-family: "Helvetica Neue",  Helvetica, Arial, sans-serif;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #fff;
+      z-index: 100;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: #111;
+        font-weight: 500;
+        position: relative;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+      
+      header nav ul li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0%;
+        height: 2px;
+        background: #111;
+        transition: width 0.3s ease;
+      }
+      
+      header nav ul li a:hover {
+        color: #555;
+        transform: translateY(-4px);
+      }
+      
+      header nav ul li a:hover::after {
+        width: 100%;
+      }
+
+    header .call {
+      text-decoration: none;
+      color: #111;
+      font-weight: bold;
+      border-bottom: 1px solid #111;
+      font-family: "Helvetica Neue",  Helvetica, Arial, sans-serif;
+      transition: color 0.3s ease, transform 0.3s ease;
+
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 100vh;
+      padding: 110px 60px 40px;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text h1 {
+      font-size: 6rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .stat {
+      font-size: 1.2rem;
+    }
+
+    .stat span {
+      display: block;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: right;
+    }
+
+    .hero-image img {
+        width: 60%;
+        height: 80vh;
+        object-fit: cover;
+      /* max-width: 600px; */
+      border-radius: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    h1{
+        font-family: 'Birthstone', cursive;
+    }
